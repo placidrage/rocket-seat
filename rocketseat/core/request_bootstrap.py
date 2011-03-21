@@ -16,8 +16,7 @@ class RequestBootstrap(object):
     def __init__(self, request_handler, request_method, uri_arguments):
         '''
         '''
-        super(RequestBootstrap, self).__init__(
-            request_handler, request_method, uri_arguments)
+        super(RequestBootstrap, self).__init__()
         
         if uri_arguments is None:
             self.uri_arguments = uri_arguments
